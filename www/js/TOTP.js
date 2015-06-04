@@ -70,10 +70,6 @@ function showToken() {
     $('#token').toggleClass('hide');
 }
 
-function info() {
-	alert('aa');
-}
-
 // TODO: IMPLEMENTAR CHECAGEM DE HORÁRIO DO CLIENT
 
 //  <script src="https://utc-time.appspot.com"></script>
