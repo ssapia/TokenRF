@@ -1,9 +1,11 @@
 <div id="loginPnl">
   <form ng-submit="loginCtrl.login()" ui-sref="token" novalidate>
     <div class="form-group">
+      usuário:
       <input type="text" ng-model="loginCtrl.user.email" class="form-control" id="exampleInputEmail1" required>
     </div>
     <div class="form-group">
+      senha:
       <input type="password" ng-model="loginCtrl.user.password" class="form-control" id="exampleInputPassword1" required>
     </div>
     <button type="submit" class="btn btn-default align-center">entrar</button>
