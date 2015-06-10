@@ -26,6 +26,9 @@
         <div class="col-md-4 col-md-offset-4">
           <div class="align-center pnl">
             <img onclick="info()" class="align-center" src="assets/images/rf.gif" >
+            <button ng-click="open()">Modal</button>
+            <button ng-click="open('lg')">Modal lg</button>
+            <button ng-click="open('sm')">Modal sm</button>
             <br><br>
 
             <ng-view/>
@@ -43,10 +46,12 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="pushmodal/pushmodal.js"></script>
     <script src="login/login.js"></script>
     <script src="token/token.js"></script>
     <script src="app.js"></script>

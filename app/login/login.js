@@ -2,7 +2,7 @@
  * Created by enrique on 6/4/15.
  */
 angular
-  .module('tokenRfApp.login', [])
+  .module('tokenRfApp.login', ['ui.bootstrap'])
   .controller('LoginController', function($location) {
     console.log('login controller');
 

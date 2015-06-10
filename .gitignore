@@ -4,3 +4,5 @@ dist
 .sass-cache
 .idea
 bower_components
+*.DS_Store
+*.iml
