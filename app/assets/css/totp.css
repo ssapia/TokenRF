@@ -1,7 +1,7 @@
 
 body {
 	background-color: #eee;
-	padding-top: 48px 
+	padding-top: 48px
 }
 
 .pnl {
@@ -9,16 +9,13 @@ body {
 	border-color: #777;
 	border: 1px solid;
  	padding: 20px;
-	width: 285px;
+	min-width: 285px;
+	max-width: 340px;
+  min-height: 307px;
+  max-height: 370px;
 }
 
 .align-center {
 	display: block;
 	margin:  auto
 }
-
-
-
-
-
-

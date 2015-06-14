@@ -1,7 +1,7 @@
 /**
  * Created by enrique on 6/9/15.
  */
-angular.module('tokenRfApp.pushmodal', [])
+angular.module('app.common.pushmodal', [])
   .controller('PushModalController', function($scope, $modalInstance, items) {
     $scope.items = items;
     $scope.selected = {

@@ -9,30 +9,17 @@
  * Main module of the application.
  */
 angular
-  .module('tokenRfApp', [
-    'ngResource',
-    'ngRoute',
+  .module('app', [
     'ui.router',
-    'tokenRfApp.login',
-    'tokenRfApp.token',
-    'tokenRfApp.pushmodal'
+    'app.common.pushmodal',
+    'app.login',
+    'app.token',
+    'app.user'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'login/login.tmpl.html',
-        controller: 'LoginController as loginCtrl'
-      })
-      .when('/token', {
-        templateUrl: 'token/token.tmpl.html',
-        controller: 'TokenController as tokenCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
+  .config(function ($urlRouterProvider) {
+      $urlRouterProvider.otherwise('/');
   })
   .controller('mainController', function($scope, $modal, $log) {
-    console.log('Oi Salvador. Eu sou um controller do AngularJS. Awesome!!!')
 
     $scope.items = ['item1', 'item2', 'item3'];
     $scope.animationsEnabled = true;
@@ -41,7 +28,7 @@ angular
 
       var modalInstance = $modal.open({
         animation: $scope.animationsEnabled,
-        templateUrl: 'pushmodal/pushmodal.tmpl.html',
+        templateUrl: 'common/pushmodal/pushmodal.tmpl.html',
         controller: 'PushModalController',
         size: size,
         resolve: {

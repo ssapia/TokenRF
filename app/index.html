@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" ng-app="tokenRfApp">
+<html class="no-js" ng-app="app">
   <head>
     <meta charset="utf-8">
     <title>Reserva Fácil</title>
@@ -29,9 +29,10 @@
             <button ng-click="open()">Modal</button>
             <button ng-click="open('lg')">Modal lg</button>
             <button ng-click="open('sm')">Modal sm</button>
+            <button ui-sref="user">Rendom user</button>
             <br><br>
 
-            <ng-view/>
+            <ui-view></ui-view>
           </div>
         </div>
       </div>
@@ -40,18 +41,20 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="pushmodal/pushmodal.js"></script>
+    <script src="common/models/UsersModel.js"></script>
+    <script src="common/pushmodal/pushmodal.js"></script>
+    <script src="user/user.js"></script>
     <script src="login/login.js"></script>
     <script src="token/token.js"></script>
     <script src="app.js"></script>
