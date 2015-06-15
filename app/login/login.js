@@ -14,14 +14,17 @@ angular
         controller: 'LoginController as loginCtrl'
       })
   })
-  .controller('LoginController', function($location, UsersModel) {
+  .controller('LoginController', function($location, UsersModel, ErrorsModel) {
     var loginCtrl = this;
     loginCtrl.user = {};
 
     function login(user) {
       UsersModel.login(user)
-        .then(function success() {
+        .then(function success(result) {
+          ErrorsModel.setError('');
           $location.path('/token');
+        }, function error(result) {
+          ErrorsModel.setError(result.data);
         });
     }
 

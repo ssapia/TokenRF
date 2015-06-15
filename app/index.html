@@ -15,23 +15,23 @@
     <link rel="stylesheet" href="assets/css/totp.css">
     <!-- endbuild -->
   </head>
-  <body ng-controller="mainController">
+  <body ng-controller="MainController as mainCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
     <div class="container">
+
+
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
           <div class="align-center pnl">
             <img onclick="info()" class="align-center" src="assets/images/rf.gif" >
-            <button ng-click="open()">Modal</button>
-            <button ng-click="open('lg')">Modal lg</button>
-            <button ng-click="open('sm')">Modal sm</button>
-            <button ui-sref="user">Rendom user</button>
-            <br><br>
-
+            </br>
+            <div ng-show="mainCtrl.getError()" class="alert alert-danger alert-dismissible" role="alert">
+              <strong>Error!</strong> {{mainCtrl.getError()}}
+            </div>
             <ui-view></ui-view>
           </div>
         </div>
@@ -41,17 +41,19 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="common/models/ErrorsModel.js"></script>
     <script src="common/models/UsersModel.js"></script>
     <script src="common/pushmodal/pushmodal.js"></script>
     <script src="user/user.js"></script>

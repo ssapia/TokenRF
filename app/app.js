@@ -11,6 +11,7 @@
 angular
   .module('app', [
     'ui.router',
+    'app.common.models.errors',
     'app.common.pushmodal',
     'app.login',
     'app.token',
@@ -19,7 +20,10 @@ angular
   .config(function ($urlRouterProvider) {
       $urlRouterProvider.otherwise('/');
   })
-  .controller('mainController', function($scope, $modal, $log) {
+  .controller('MainController', function($scope, $modal, $log, ErrorsModel) {
+    var mainCtrl = this;
+    mainCtrl.getError = ErrorsModel.getError;
+    mainCtrl.clearError = ErrorsModel.clearError;
 
     $scope.items = ['item1', 'item2', 'item3'];
     $scope.animationsEnabled = true;

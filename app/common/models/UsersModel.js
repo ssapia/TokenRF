@@ -5,7 +5,7 @@ angular
   .module('app.common.models.users', [])
   .service('UsersModel', function($http) {
     var model = this,
-      API_URL = 'http://localhost:3000';
+      API_URL = 'http://10.0.1.9:4000';
 
     var extractUser = function(result) {
       return result.data;
@@ -23,7 +23,7 @@ angular
       return $http.post(API_URL + '/login', {
         username: user.username,
         password: user.password
-      }).then(extractUser, handleError);
+      }).then(extractUser);
     };
 
   });
