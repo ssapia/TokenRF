@@ -8,7 +8,8 @@ angular
       API_URL = 'http://10.0.1.9:4000';
 
     var extractUser = function(result) {
-      return result.data;
+      console.log('authentication token: '+result.data.token);
+      return result.data.user;
     };
 
     var handleError = function(result) {

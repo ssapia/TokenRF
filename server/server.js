@@ -5,6 +5,9 @@ var express = require('express');
 var faker = require('faker');
 var cors = require('cors');
 var bodyParser = require('body-parser');
+var jwt = require('jsonwebtoken');
+
+var jwtSecret = 'fjkdlsajfoew239053/3uk';
 
 var app = express();
 app.use(cors());
@@ -22,7 +25,14 @@ app.get('/random-user', function(req, res) {
 });
 
 app.post('/login', authenticate, function (req, res) {
-  res.json(userDB);
+  var body = req.body;
+  var token = jwt.sign({
+    username: userDB.username
+  }, jwtSecret);
+  res.json({
+    token: token,
+    user: userDB
+  });
 });
 
 function authenticate(req, res, next) {
