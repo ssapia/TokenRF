@@ -5,11 +5,10 @@ angular
   .module('app.common.models.users', [])
   .service('UsersModel', function($http) {
     var model = this,
-      API_URL = 'http://10.0.1.9:4000';
+      API_URL = 'http://localhost:4000';
 
-    var extractUser = function(result) {
-      console.log('authentication token: '+result.data.token);
-      return result.data.user;
+    var handleSuccess = function(result) {
+      return result;
     };
 
     var handleError = function(result) {
@@ -17,14 +16,14 @@ angular
     };
 
     model.getRandomUser = function() {
-      return $http.get(API_URL+'/random-user').then(extractUser, handleError);
+      return $http.get(API_URL+'/random-user').then(handleSuccess, handleError);
     };
 
     model.login = function(user) {
       return $http.post(API_URL + '/login', {
         username: user.username,
         password: user.password
-      }).then(extractUser);
+      }).then(handleSuccess);
     };
 
   });

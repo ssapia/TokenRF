@@ -14,7 +14,7 @@ angular
         controller: 'LoginController as loginCtrl'
       })
   })
-  .controller('LoginController', function($location, UsersModel, ErrorsModel) {
+  .controller('LoginController', function($location, UsersModel, ErrorsModel, AuthTokenFactory) {
     var loginCtrl = this;
     loginCtrl.user = {};
 
@@ -22,6 +22,7 @@ angular
       UsersModel.login(user)
         .then(function success(result) {
           ErrorsModel.setError('');
+          AuthTokenFactory.setToken(result.data.token);
           $location.path('/token');
         }, function error(result) {
           ErrorsModel.setError(result.data);
