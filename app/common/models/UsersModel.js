@@ -3,7 +3,7 @@
  */
 angular
   .module('app.common.models.users', [])
-  .service('UsersModel', function($http) {
+  .service('UsersModel', function($http, $q, AuthTokenFactory) {
     var model = this,
       API_URL = 'http://localhost:4000';
 
@@ -17,6 +17,14 @@ angular
 
     model.getRandomUser = function() {
       return $http.get(API_URL+'/random-user').then(handleSuccess, handleError);
+    };
+
+    model.getUser = function() {
+      if (AuthTokenFactory.getToken()) {
+        return $http.get(API_URL + '/me').then(handleSuccess, handleError);
+      } else {
+        return $q.reject('User not authenticated');
+      }
     };
 
     model.login = function(user) {

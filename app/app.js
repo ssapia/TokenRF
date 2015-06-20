@@ -13,13 +13,13 @@ angular
     'ui.router',
     'app.common.models.errors',
     'app.common.pushmodal',
+    'app.common.models.users',
     'app.login',
     'app.token',
     'app.user'
   ])
   .config(function ($urlRouterProvider, $httpProvider) {
     $urlRouterProvider.otherwise('/');
-
     $httpProvider.interceptors.push('AuthInterceptor');
   })
   .factory('AuthTokenFactory', function AuthTokenFactory($window) {

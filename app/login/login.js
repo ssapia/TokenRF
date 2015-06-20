@@ -3,8 +3,7 @@
  */
 angular
   .module('app.login', [
-    'ui.bootstrap',
-    'app.common.models.users'
+    'ui.bootstrap'
   ])
   .config(function($stateProvider) {
     $stateProvider

@@ -6,12 +6,14 @@ var faker = require('faker');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var jwt = require('jsonwebtoken');
+var expressJwt = require('express-jwt');
 
 var jwtSecret = 'fjkdlsajfoew239053/3uk';
 
 var app = express();
 app.use(cors());
 app.use(bodyParser.json());
+app.use(expressJwt({secret: jwtSecret}).unless({path:['/login']}));
 
 var userDB = {
   username: 'admin',
@@ -35,6 +37,10 @@ app.post('/login', authenticate, function (req, res) {
   });
 });
 
+app.get('/me', function (req, res) {
+  res.send(req.user);
+});
+
 function authenticate(req, res, next) {
   var body = req.body;
   if (!body.username || !body.password) {
@@ -47,5 +53,5 @@ function authenticate(req, res, next) {
 }
 
 app.listen(4000, function () {
-  console.log('App listening on localhost:3000');
+  console.log('App listening on localhost:4000');
 });

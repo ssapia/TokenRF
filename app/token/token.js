@@ -8,10 +8,24 @@ angular
       .state('token', {
         url: '/token',
         templateUrl: 'token/token.tmpl.html',
-        controller: 'TokenController as tokenCtrl'
+        controller: 'TokenController as vm'
     });
 
   })
-  .controller('TokenController', function() {
-    showToken();
+  .controller('TokenController', function(UsersModel, ErrorsModel, $location, AuthTokenFactory) {
+    var vm = this;
+    vm.logout = function() {
+      AuthTokenFactory.setToken();
+    };
+
+    UsersModel.getUser().then(function() {
+      showToken();
+    },
+    function() {
+      ErrorsModel.setError('User not authenticared.');
+      $location.path('/login');
+    });
+
+
+
   });
