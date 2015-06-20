@@ -19,7 +19,7 @@ angular
 
     function login(user) {
       UsersModel.login(user)
-        .then(function success(result) {
+        .then(function ter(result) {
           ErrorsModel.setError('');
           AuthTokenFactory.setToken(result.data.token);
           $location.path('/token');
