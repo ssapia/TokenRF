@@ -30,54 +30,45 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
-    url: "/tab",
+    .state('login', {
+    url: "/login",
     abstract: true,
-    templateUrl: "templates/tabs.html"
+    templateUrl: "templates/login.html"
   })
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
+  .state('dash', {
     url: '/dash',
     views: {
       'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+        templateUrl: 'templates/dash.html',
+        controller: 'DashCtrl as vm'
       }
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+    .state('login', {
+      url: '/login',
       views: {
         'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
-        }
-      }
-    })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
+          templateUrl: 'templates/login.html',
+          controller: 'LoginCtrl as vm'
         }
       }
     })
 
-  .state('tab.account', {
-    url: '/account',
+  .state('token', {
+    url: '/token',
     views: {
       'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+        templateUrl: 'templates/token.html',
+        controller: 'TokenCtrl'
       }
     }
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/login');
 
 });

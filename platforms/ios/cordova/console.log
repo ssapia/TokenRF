@@ -116,3 +116,70 @@
 2015-06-24 21:44:40.641 tokenrf[5961:46616] [CDVTimer][TotalPluginStartup] 36.873996ms
 2015-06-24 21:44:40.699 tokenrf[5961:46616] Resetting plugins due to page load.
 2015-06-24 21:44:40.913 tokenrf[5961:46616] Finished load of: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Bundle/Application/3AA7B9F9-5E09-4585-A639-DB75F7D0E912/tokenrf.app/www/index.html#/tab/dash
+2015-06-24 23:36:16.822 tokenrf[10492:99859] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/A604C934-F92A-4D75-8CD7-2B4749CEE400/Library/Cookies/Cookies.binarycookies
+2015-06-24 23:36:17.086 tokenrf[10492:99859] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 23:36:17.086 tokenrf[10492:99859] Multi-tasking -> Device: YES, App: YES
+2015-06-24 23:36:17.102 tokenrf[10492:99859] Unlimited access to network resources
+2015-06-24 23:36:17.420 tokenrf[10492:99859] [CDVTimer][keyboard] 0.075996ms
+2015-06-24 23:36:17.548 tokenrf[10492:99859] [CDVTimer][splashscreen] 126.868010ms
+2015-06-24 23:36:17.548 tokenrf[10492:99859] [CDVTimer][TotalPluginStartup] 127.985001ms
+2015-06-24 23:36:17.728 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:36:18.225 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:42:35.497 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:42:35.742 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:43:23.516 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:43:23.796 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:43:44.444 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:43:44.638 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:44:47.663 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:44:47.861 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:45:01.132 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:45:01.324 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:46:21.066 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:46:21.377 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:46:30.520 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:46:30.667 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:47:10.068 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:47:10.233 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:47:49.352 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:47:49.475 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:48:18.496 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:48:18.609 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:50:15.031 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:50:15.213 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:50:37.232 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:50:37.431 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:51:39.436 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:51:39.585 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:51:39.731 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:51:39.939 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 23:57:10.232 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-24 23:57:10.354 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-25 00:00:31.483 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-25 00:00:31.491 tokenrf[10492:99859] Failed to load webpage with error: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2015-06-25 00:00:31.492 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-25 00:00:31.578 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-25 00:01:09.518 tokenrf[10492:99859] Resetting plugins due to page load.
+2015-06-25 00:01:09.671 tokenrf[10492:99859] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-25 00:01:36.211 tokenrf[10975:112289] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/B6F96091-0600-4975-B364-4B86BB8A2B5E/Library/Cookies/Cookies.binarycookies
+2015-06-25 00:01:36.357 tokenrf[10975:112289] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-25 00:01:36.358 tokenrf[10975:112289] Multi-tasking -> Device: YES, App: YES
+2015-06-25 00:01:36.362 tokenrf[10975:112289] Unlimited access to network resources
+2015-06-25 00:01:36.459 tokenrf[10975:112289] [CDVTimer][keyboard] 0.075996ms
+2015-06-25 00:01:36.499 tokenrf[10975:112289] [CDVTimer][splashscreen] 40.123999ms
+2015-06-25 00:01:36.499 tokenrf[10975:112289] [CDVTimer][TotalPluginStartup] 40.588975ms
+2015-06-25 00:01:36.581 tokenrf[10975:112289] Resetting plugins due to page load.
+2015-06-25 00:01:36.849 tokenrf[10975:112289] Finished load of: http://10.0.1.5:8100/
+2015-06-25 00:04:31.067 tokenrf[10975:112289] Resetting plugins due to page load.
+2015-06-25 00:04:31.243 tokenrf[10975:112289] Finished load of: http://10.0.1.5:8100/#/login
+2015-06-25 00:07:10.653 tokenrf[10975:112289] Resetting plugins due to page load.
+2015-06-25 00:07:10.659 tokenrf[10975:112289] Failed to load webpage with error: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2015-06-25 00:07:10.659 tokenrf[10975:112289] Resetting plugins due to page load.
+2015-06-25 00:07:10.852 tokenrf[10975:112289] Finished load of: http://10.0.1.5:8100/#/login
+2015-06-25 00:08:13.821 tokenrf[10975:112289] Resetting plugins due to page load.
+2015-06-25 00:08:13.995 tokenrf[10975:112289] Finished load of: http://10.0.1.5:8100/#/login
+2015-06-25 00:09:08.188 tokenrf[10975:112289] Resetting plugins due to page load.
+2015-06-25 00:09:08.341 tokenrf[10975:112289] Finished load of: http://10.0.1.5:8100/#/login
+2015-06-25 00:09:30.676 tokenrf[10975:115057] Communications error: <OS_xpc_error: <error: 0x2e0b5f4> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x2e0b83c> { length = 22, contents = "Connection interrupted" }
+}>
