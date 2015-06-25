@@ -1,0 +1,118 @@
+2015-06-24 21:13:04.739 tokenrf[2408:22320] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/A80CA2BC-9860-4BFD-AF77-3170FAD5BDD9/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:13:04.868 tokenrf[2408:22320] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:13:04.868 tokenrf[2408:22320] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:13:04.871 tokenrf[2408:22320] Unlimited access to network resources
+2015-06-24 21:13:04.964 tokenrf[2408:22320] [CDVTimer][keyboard] 0.078976ms
+2015-06-24 21:13:04.984 tokenrf[2408:22320] [CDVTimer][splashscreen] 19.635022ms
+2015-06-24 21:13:04.984 tokenrf[2408:22320] [CDVTimer][TotalPluginStartup] 20.426989ms
+2015-06-24 21:13:05.294 tokenrf[2408:22320] Resetting plugins due to page load.
+2015-06-24 21:13:05.498 tokenrf[2408:22320] Finished load of: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Bundle/Application/96829227-D04D-4ABF-83A0-9DE57DC48F4C/tokenrf.app/www/index.html#/tab/dash
+2015-06-24 21:16:10.214 tokenrf[2408:23472] Terminating since there is no system app.
+2015-06-24 21:17:01.621 tokenrf[2688:24663] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/871F00BE-AFDE-455A-A0DF-2356FB595864/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:17:01.735 tokenrf[2688:24663] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:17:01.735 tokenrf[2688:24663] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:17:01.738 tokenrf[2688:24663] Unlimited access to network resources
+2015-06-24 21:17:01.830 tokenrf[2688:24663] [CDVTimer][keyboard] 0.086010ms
+2015-06-24 21:17:01.854 tokenrf[2688:24663] [CDVTimer][splashscreen] 24.320006ms
+2015-06-24 21:17:01.854 tokenrf[2688:24663] [CDVTimer][TotalPluginStartup] 25.259018ms
+2015-06-24 21:17:01.925 tokenrf[2688:24663] Resetting plugins due to page load.
+2015-06-24 21:17:02.209 tokenrf[2688:24663] Finished load of: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Bundle/Application/1FB27931-25DE-40C8-B38A-BD8E806F7503/tokenrf.app/www/index.html#/tab/dash
+2015-06-24 21:28:29.480 tokenrf[2688:30350] Terminating since there is no system app.
+2015-06-24 21:29:06.651 tokenrf[2978:31226] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/3DD0864A-BE71-4120-BE20-4BC794731378/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:29:06.754 tokenrf[2978:31226] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:29:06.755 tokenrf[2978:31226] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:29:06.758 tokenrf[2978:31226] Unlimited access to network resources
+2015-06-24 21:29:06.839 tokenrf[2978:31226] [CDVTimer][keyboard] 0.059962ms
+2015-06-24 21:29:06.860 tokenrf[2978:31226] [CDVTimer][splashscreen] 20.784974ms
+2015-06-24 21:29:06.860 tokenrf[2978:31226] [CDVTimer][TotalPluginStartup] 21.214008ms
+2015-06-24 21:29:06.930 tokenrf[2978:31226] Resetting plugins due to page load.
+2015-06-24 21:29:07.269 tokenrf[2978:31226] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 21:30:04.620 tokenrf[3301:32662] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/227759AD-E777-4CFD-8C52-FC76BF34C690/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:30:04.781 tokenrf[3301:32662] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:30:04.782 tokenrf[3301:32662] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:30:04.784 tokenrf[3301:32662] Unlimited access to network resources
+2015-06-24 21:30:04.890 tokenrf[3301:32662] [CDVTimer][keyboard] 0.074983ms
+2015-06-24 21:30:04.907 tokenrf[3301:32662] [CDVTimer][splashscreen] 16.318977ms
+2015-06-24 21:30:04.907 tokenrf[3301:32662] [CDVTimer][TotalPluginStartup] 16.878963ms
+2015-06-24 21:30:04.982 tokenrf[3301:32662] Resetting plugins due to page load.
+2015-06-24 21:30:05.346 tokenrf[3301:32662] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 21:30:26.620 tokenrf[3301:32674] Communications error: <OS_xpc_error: <error: 0x2df35f4> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x2df383c> { length = 22, contents = "Connection interrupted" }
+}>
+2015-06-24 21:30:26.630 tokenrf[3301:32966] Terminating since there is no system app.
+2015-06-24 21:33:01.129 tokenrf[3624:34398] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/5DF8BFB1-875A-4162-B266-983D7CB30348/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:33:01.233 tokenrf[3624:34398] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:33:01.233 tokenrf[3624:34398] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:33:01.235 tokenrf[3624:34398] Unlimited access to network resources
+2015-06-24 21:33:01.319 tokenrf[3624:34398] [CDVTimer][keyboard] 0.064969ms
+2015-06-24 21:33:01.342 tokenrf[3624:34398] [CDVTimer][splashscreen] 23.072004ms
+2015-06-24 21:33:01.343 tokenrf[3624:34398] [CDVTimer][TotalPluginStartup] 23.563981ms
+2015-06-24 21:33:01.410 tokenrf[3624:34398] Resetting plugins due to page load.
+2015-06-24 21:33:01.745 tokenrf[3624:34398] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 21:33:18.170 tokenrf[3624:34666] Terminating since there is no system app.
+2015-06-24 21:33:40.772 tokenrf[3814:35450] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/0D186116-3ADB-4BD9-937E-AE001445CE58/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:33:40.870 tokenrf[3814:35450] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:33:40.870 tokenrf[3814:35450] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:33:40.874 tokenrf[3814:35450] Unlimited access to network resources
+2015-06-24 21:33:40.957 tokenrf[3814:35450] [CDVTimer][keyboard] 0.065029ms
+2015-06-24 21:33:40.974 tokenrf[3814:35450] [CDVTimer][splashscreen] 17.754972ms
+2015-06-24 21:33:40.975 tokenrf[3814:35450] [CDVTimer][TotalPluginStartup] 18.248975ms
+2015-06-24 21:33:41.025 tokenrf[3814:35450] Resetting plugins due to page load.
+2015-06-24 21:33:41.235 tokenrf[3814:35450] Finished load of: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Bundle/Application/4AB39BD9-98B2-4AB3-AEF1-289D4B597A64/tokenrf.app/www/index.html#/tab/dash
+2015-06-24 21:35:30.859 tokenrf[4131:37096] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/8ECF3175-544B-422E-8533-FAF79EB806C6/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:35:30.965 tokenrf[4131:37096] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:35:30.966 tokenrf[4131:37096] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:35:30.968 tokenrf[4131:37096] Unlimited access to network resources
+2015-06-24 21:35:31.050 tokenrf[4131:37096] [CDVTimer][keyboard] 0.079036ms
+2015-06-24 21:35:31.073 tokenrf[4131:37096] [CDVTimer][splashscreen] 23.368001ms
+2015-06-24 21:35:31.073 tokenrf[4131:37096] [CDVTimer][TotalPluginStartup] 23.817003ms
+2015-06-24 21:35:31.143 tokenrf[4131:37096] Resetting plugins due to page load.
+2015-06-24 21:35:31.465 tokenrf[4131:37096] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 21:36:47.421 tokenrf[4451:38827] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/E65357E3-2BCC-4148-A541-A2C642020D92/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:36:47.522 tokenrf[4451:38827] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:36:47.523 tokenrf[4451:38827] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:36:47.525 tokenrf[4451:38827] Unlimited access to network resources
+2015-06-24 21:36:47.609 tokenrf[4451:38827] [CDVTimer][keyboard] 0.064015ms
+2015-06-24 21:36:47.634 tokenrf[4451:38827] [CDVTimer][splashscreen] 24.580002ms
+2015-06-24 21:36:47.634 tokenrf[4451:38827] [CDVTimer][TotalPluginStartup] 25.004983ms
+2015-06-24 21:36:47.697 tokenrf[4451:38827] Resetting plugins due to page load.
+2015-06-24 21:36:48.038 tokenrf[4451:38827] Finished load of: http://10.0.1.5:8100/#/tab/dash
+2015-06-24 21:37:18.189 tokenrf[4451:39389] Terminating since there is no system app.
+2015-06-24 21:39:06.254 tokenrf[4974:41920] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/4D3BDE99-2D85-443F-BC50-8FED5CA1CFB3/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:39:06.363 tokenrf[4974:41920] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:39:06.364 tokenrf[4974:41920] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:39:06.367 tokenrf[4974:41920] Unlimited access to network resources
+2015-06-24 21:39:06.460 tokenrf[4974:41920] [CDVTimer][keyboard] 0.066996ms
+2015-06-24 21:39:06.483 tokenrf[4974:41920] [CDVTimer][splashscreen] 22.909999ms
+2015-06-24 21:39:06.483 tokenrf[4974:41920] [CDVTimer][TotalPluginStartup] 23.825049ms
+2015-06-24 21:39:06.541 tokenrf[4974:41920] Resetting plugins due to page load.
+2015-06-24 21:39:06.743 tokenrf[4974:41920] Finished load of: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Bundle/Application/FA900A86-B693-473A-B58D-D4F743789437/tokenrf.app/www/index.html#/tab/dash
+2015-06-24 21:39:08.464 tokenrf[4974:41931] Terminating since there is no system app.
+2015-06-24 21:40:08.669 tokenrf[5290:43228] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/1BC9F080-1E81-4B04-9005-35F558B7BC18/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:40:08.773 tokenrf[5290:43228] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:40:08.774 tokenrf[5290:43228] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:40:08.776 tokenrf[5290:43228] Unlimited access to network resources
+2015-06-24 21:40:08.873 tokenrf[5290:43228] [CDVTimer][keyboard] 0.065029ms
+2015-06-24 21:40:08.894 tokenrf[5290:43228] [CDVTimer][splashscreen] 21.788001ms
+2015-06-24 21:40:08.895 tokenrf[5290:43228] [CDVTimer][TotalPluginStartup] 22.225022ms
+2015-06-24 21:40:08.957 tokenrf[5290:43228] Resetting plugins due to page load.
+2015-06-24 21:40:09.108 tokenrf[5290:43228] Finished load of: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Bundle/Application/7F99BE7D-47BA-4EE6-9FDD-02F02C2EF48C/tokenrf.app/www/index.html
+2015-06-24 21:41:44.320 tokenrf[5615:44707] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/A1AD61DD-186F-4AFB-BBCC-E0F85D5350EC/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:41:44.430 tokenrf[5615:44707] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:41:44.430 tokenrf[5615:44707] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:41:44.433 tokenrf[5615:44707] Unlimited access to network resources
+2015-06-24 21:41:44.538 tokenrf[5615:44707] [CDVTimer][keyboard] 0.086010ms
+2015-06-24 21:41:44.558 tokenrf[5615:44707] [CDVTimer][splashscreen] 20.043015ms
+2015-06-24 21:41:44.558 tokenrf[5615:44707] [CDVTimer][TotalPluginStartup] 20.619988ms
+2015-06-24 21:41:44.622 tokenrf[5615:44707] Resetting plugins due to page load.
+2015-06-24 21:41:44.846 tokenrf[5615:44707] Finished load of: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Bundle/Application/FC59C437-75CA-4136-856E-9A9D87B9290B/tokenrf.app/www/index.html#/tab/dash
+2015-06-24 21:42:21.445 tokenrf[5615:45136] Terminating since there is no system app.
+2015-06-24 21:44:40.387 tokenrf[5961:46616] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/CE2E118E-DFB3-416E-824B-AAF22BF41601/Library/Cookies/Cookies.binarycookies
+2015-06-24 21:44:40.512 tokenrf[5961:46616] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-24 21:44:40.513 tokenrf[5961:46616] Multi-tasking -> Device: YES, App: YES
+2015-06-24 21:44:40.515 tokenrf[5961:46616] Unlimited access to network resources
+2015-06-24 21:44:40.605 tokenrf[5961:46616] [CDVTimer][keyboard] 0.069022ms
+2015-06-24 21:44:40.641 tokenrf[5961:46616] [CDVTimer][splashscreen] 36.146998ms
+2015-06-24 21:44:40.641 tokenrf[5961:46616] [CDVTimer][TotalPluginStartup] 36.873996ms
+2015-06-24 21:44:40.699 tokenrf[5961:46616] Resetting plugins due to page load.
+2015-06-24 21:44:40.913 tokenrf[5961:46616] Finished load of: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Bundle/Application/3AA7B9F9-5E09-4585-A639-DB75F7D0E912/tokenrf.app/www/index.html#/tab/dash
