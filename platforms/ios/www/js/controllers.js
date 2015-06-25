@@ -1,6 +1,22 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope, $cordovaDevice) {
+    document.addEventListener("deviceready", function () {
+
+      var device = $cordovaDevice.getDevice();
+
+      var cordova = $cordovaDevice.getCordova();
+
+      var model = $cordovaDevice.getModel();
+
+      var platform = $cordovaDevice.getPlatform();
+
+      $scope.uuid = $cordovaDevice.getUUID();
+
+      var version = $cordovaDevice.getVersion();
+
+    }, false);
+  })
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
@@ -10,7 +26,7 @@ angular.module('starter.controllers', [])
   //
   //$scope.$on('$ionicView.enter', function(e) {
   //});
-  
+
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
     Chats.remove(chat);
