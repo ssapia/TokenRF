@@ -29,7 +29,7 @@ function leftpad(str, len, pad) {
     return str;
 }
 
-function updateOtp() {
+function getOtp() {
 
     /* A chave será retornada no response do login */
     var secret	= "JBSWY3DPEHPK3PXP";
@@ -47,28 +47,10 @@ function updateOtp() {
     var otp = (hex2dec(hmac.substr(offset * 2, 8)) & hex2dec('7fffffff')) + '';
     otp = (otp).substr(otp.length - 6, 6);
 
-    $('#otp').text(otp);
+    return otp;
 }
 
-function timer()
-{
-    var epoch = Math.round(new Date().getTime() / 1000.0);
-    var countDown = 30 - (epoch % 30);
-    if (epoch % 30 == 0) updateOtp();
-    $('#updatingIn').text(countDown);
 
-    var percent = (100*countDown)/30;
-    $('.progress-bar').css('width', percent+'%').attr('aria-valuenow', countDown);
-
-}
-
-function showToken() {
-    $('#loginPnl').toggleClass('hide');
-
-    updateOtp();
-    setInterval(timer, 1000);
-    $('#token').toggleClass('hide');
-}
 
 
 // TODO: IMPLEMENTAR CHECAGEM DE HORÁRIO DO CLIENT

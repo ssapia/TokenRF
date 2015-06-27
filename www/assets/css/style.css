@@ -1,0 +1,28 @@
+
+body {
+  background-color: #eee;
+  padding-top: 48px
+}
+
+.pnl {
+  background-color: #F8F8F8;
+  border-color: #777;
+  border: 1px solid;
+  padding: 20px;
+  min-width: 285px;
+  max-width: 340px;
+  min-height: 307px;
+  max-height: 400px;
+}
+
+.align-center {
+  display: block;
+  margin:  auto
+}
+
+ion-view {
+  background-color: #F8F8F8 !important;
+  max-width: 230px;
+  min-height: 205px;
+  max-height: 200px;
+}

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -17,28 +17,42 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="lib/ngCordova/ng-cordova.js"></script>
-    <script src="lib/token/sha.js"></script>
-    <script src="lib/token/totp.js"></script>
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/services.js"></script>
+
+    <!-- your app's js -->
+    <script src="app.js"></script>
+
+    <script src="common/models/ErrorsModel.js"></script>
+    <script src="common/models/UsersModel.js"></script>
+
+    <script src="user/user.js"></script>
+    <script src="login/login.js"></script>
+    <script src="token/token.js"></script>
+    <script src="lib/token/sha.js"></script>
+    <script src="lib/token/totp.js"></script>
+
   </head>
-  <body ng-app="starter">
-    <!--
-      The nav bar that will be updated as we navigate between views.
-    -->
-    <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
-    </ion-nav-bar>
-    <!--
-      The views will be rendered in the <ion-nav-view> directive below
-      Templates are in the /templates folder (but you could also
-      have templates inline in this html file if you'd like).
-    -->
-    <ion-nav-view></ion-nav-view>
+
+  <body ng-controller="MainController as mainCtrl">
+
+
+    <!-- Add your site or application content here -->
+
+      <div class="row">
+          <div class="align-center pnl">
+            <img onclick="info()" class="align-center" src="assets/images/rf.gif" >
+            </br>
+            <div ng-show="mainCtrl.getError()" class="alert alert-danger alert-dismissible" role="alert">
+              <strong>Error!</strong> {{mainCtrl.getError()}}
+            </div>
+
+            <ion-nav-view></ion-nav-view>
+
+          </div>
+      </div>
+
+
   </body>
 </html>
