@@ -16,10 +16,9 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
+    <script src="lib/token/sha.js"></script>
     <script src="lib/ngCordova/ng-cordova.js"></script>
     <script src="cordova.js"></script>
-
-    <!-- your app's js -->
 
     <!-- your app's js -->
     <script src="app.js"></script>
@@ -30,8 +29,6 @@
     <script src="user/user.js"></script>
     <script src="login/login.js"></script>
     <script src="token/token.js"></script>
-    <script src="lib/token/sha.js"></script>
-    <script src="lib/token/totp.js"></script>
 
   </head>
 
@@ -39,7 +36,6 @@
 
 
     <!-- Add your site or application content here -->
-
       <div class="row responsive-sm">
         <div class="col col-33 col-offset-33">
         <div class="align-center pnl">
@@ -51,9 +47,7 @@
           <ui-view></ui-view>
         </div>
         </div>
-
       </div>
-
 
   </body>
 </html>
