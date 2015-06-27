@@ -15,6 +15,6 @@ angular.module('app.dash', [])
     vm.token = AuthTokenFactory.getToken();
     vm.showToken = function() {
       console.log('calling $location.path(/dash/token);');
-      $location.path('/token');
+      $location.path('/dash/token');
     };
   });

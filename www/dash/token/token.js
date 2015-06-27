@@ -5,8 +5,8 @@ angular
   .module('app.dash.token', [])
   .config(function($stateProvider) {
     $stateProvider
-      .state('token', {
-        url: '/token',
+      .state('dash-token', {
+        url: '/dash/token',
         templateUrl: 'dash/token/token.tmpl.html',
         controller: 'TokenController as vm'
       });
