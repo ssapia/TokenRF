@@ -15,6 +15,10 @@ angular
     var loginCtrl = this;
     loginCtrl.user = {};
 
+    if (AuthTokenFactory.getToken()) {
+      $location.path('/token');
+    }
+
     function login(user) {
       UsersModel.login(user)
         .then(function ter(result) {
