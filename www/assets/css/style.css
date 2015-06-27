@@ -20,9 +20,3 @@ body {
   margin:  auto
 }
 
-ion-view {
-  background-color: #F8F8F8 !important;
-  max-width: 230px;
-  min-height: 205px;
-  max-height: 200px;
-}

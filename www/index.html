@@ -40,17 +40,18 @@
 
     <!-- Add your site or application content here -->
 
-      <div class="row">
-          <div class="align-center pnl">
-            <img onclick="info()" class="align-center" src="assets/images/rf.gif" >
-            </br>
-            <div ng-show="mainCtrl.getError()" class="alert alert-danger alert-dismissible" role="alert">
-              <strong>Error!</strong> {{mainCtrl.getError()}}
-            </div>
-
-            <ion-nav-view></ion-nav-view>
-
+      <div class="row responsive-sm">
+        <div class="col col-33 col-offset-33">
+        <div class="align-center pnl">
+          <img onclick="info()" class="align-center" src="assets/images/rf.gif" >
+          </br>
+          <div ng-show="mainCtrl.getError()" class="alert alert-danger alert-dismissible" role="alert">
+            <strong>Error!</strong> {{mainCtrl.getError()}}
           </div>
+          <ui-view></ui-view>
+        </div>
+        </div>
+
       </div>
 
 
