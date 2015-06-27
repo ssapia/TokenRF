@@ -29,33 +29,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   // Each state's controller can be found in controllers.js
   $stateProvider
 
-  // setup an abstract state for the tabs directive
-    .state('login', {
-    url: "/login",
-    abstract: true,
-    templateUrl: "templates/login.html"
-  })
-
   // Each tab has its own nav history stack:
-
   .state('dash', {
     url: '/dash',
-    views: {
-      'tab-dash': {
         templateUrl: 'templates/dash.html',
         controller: 'DashCtrl as vm'
-      }
-    }
   })
 
     .state('login', {
       url: '/login',
-      views: {
-        'tab-chats': {
           templateUrl: 'templates/login.html',
           controller: 'LoginCtrl as vm'
-        }
-      }
     })
 
   .state('token', {

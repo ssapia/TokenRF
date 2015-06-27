@@ -183,3 +183,58 @@
 2015-06-25 00:09:30.676 tokenrf[10975:115057] Communications error: <OS_xpc_error: <error: 0x2e0b5f4> { count = 1, contents =
 	"XPCErrorDescription" => <string: 0x2e0b83c> { length = 22, contents = "Connection interrupted" }
 }>
+2015-06-27 12:43:48.752 tokenrf[935:10510] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/enrique/Library/Developer/CoreSimulator/Devices/428DEEA9-4DCD-40BB-8B64-316F611422A6/data/Containers/Data/Application/97153E0A-AC1E-4585-8485-37886E1C6188/Library/Cookies/Cookies.binarycookies
+2015-06-27 12:43:49.071 tokenrf[935:10510] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-27 12:43:49.072 tokenrf[935:10510] Multi-tasking -> Device: YES, App: YES
+2015-06-27 12:43:49.088 tokenrf[935:10510] Unlimited access to network resources
+2015-06-27 12:43:49.487 tokenrf[935:10510] [CDVTimer][keyboard] 0.069022ms
+2015-06-27 12:43:49.667 tokenrf[935:10510] [CDVTimer][splashscreen] 179.535031ms
+2015-06-27 12:43:49.667 tokenrf[935:10510] [CDVTimer][TotalPluginStartup] 180.606008ms
+2015-06-27 12:43:49.850 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 12:43:50.338 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 12:47:48.581 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 12:47:48.802 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 12:47:57.931 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 12:47:58.063 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 12:48:57.009 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 12:48:57.165 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 12:48:57.510 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 12:48:57.634 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 12:49:56.612 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 12:49:56.765 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 12:49:57.114 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 12:49:57.231 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 12:59:30.399 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 12:59:30.496 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 12:59:30.776 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 12:59:31.091 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:08:48.368 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:08:48.482 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:09:36.881 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:09:36.960 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:09:53.528 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:09:53.588 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:11:09.639 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:11:09.716 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:12:38.775 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:12:38.917 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:13:58.794 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:13:58.988 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:15:26.655 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:15:26.734 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:15:52.913 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:15:52.983 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:18:15.459 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:18:15.713 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:22:51.970 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:22:52.168 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:23:01.822 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:23:02.027 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:23:20.484 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:23:20.619 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:25:46.246 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:25:46.492 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:26:12.508 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:26:12.727 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login
+2015-06-27 13:27:25.536 tokenrf[935:10510] Resetting plugins due to page load.
+2015-06-27 13:27:25.739 tokenrf[935:10510] Finished load of: http://10.0.63.48:8100/#/login

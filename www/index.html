@@ -21,33 +21,27 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
-    <script src="app.js"></script>
-
     <script src="common/models/ErrorsModel.js"></script>
     <script src="common/models/UsersModel.js"></script>
 
-    <script src="user/user.js"></script>
+    <script src="dash/token/token.js"></script>
+    <script src="dash/dash.js"></script>
     <script src="login/login.js"></script>
-    <script src="token/token.js"></script>
-
+    <script src="app.js"></script>
   </head>
-
-  <body ng-controller="MainController as mainCtrl">
-
-
-    <!-- Add your site or application content here -->
-      <div class="row responsive-sm">
-        <div class="col col-33 col-offset-33">
-        <div class="align-center pnl">
-          <img onclick="info()" class="align-center" src="assets/images/rf.gif" >
-          </br>
-          <div ng-show="mainCtrl.getError()" class="alert alert-danger alert-dismissible" role="alert">
-            <strong>Error!</strong> {{mainCtrl.getError()}}
-          </div>
-          <ui-view></ui-view>
-        </div>
-        </div>
-      </div>
-
+  <body ng-app="app">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
   </body>
 </html>

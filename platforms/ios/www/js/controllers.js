@@ -5,12 +5,11 @@ angular.module('starter.controllers', [])
   })
 
 .controller('LoginCtrl', function($scope, Chats) {
-
+    var vm = this;
+    vm.login = function() {
+      vm.logando = 'Clicou no login';
+    };
   })
-
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-
-})
 
 .controller('TokenCtrl', function($scope) {
 

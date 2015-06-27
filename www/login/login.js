@@ -6,29 +6,23 @@ angular
   .config(function($stateProvider) {
     $stateProvider
       .state('login', {
-        url: '/',
-        templateUrl: 'login/login.tmpl.html',
-        controller: 'LoginController as loginCtrl'
+        url: '/login',
+        templateUrl: 'login/login.html',
+        controller: 'LoginController as vm'
       })
   })
-  .controller('LoginController', function($location, UsersModel, ErrorsModel, AuthTokenFactory) {
-    var loginCtrl = this;
-    loginCtrl.user = {};
+  .controller('LoginController', function($location, AuthTokenFactory, UsersService) {
+    var vm = this;
+    vm.user = {};
 
-    if (AuthTokenFactory.getToken()) {
-      $location.path('/token');
-    }
-
-    function login(user) {
-      UsersModel.login(user)
-        .then(function ter(result) {
-          ErrorsModel.setError('');
-          AuthTokenFactory.setToken(result.data.token);
-          $location.path('/token');
-        }, function error(result) {
-          ErrorsModel.setError(result.data);
+    function login() {
+      UsersService.login(vm.user)
+        .then(function(result) {
+          if (result) {
+            $location.path('/dash');
+          }
         });
     }
 
-    loginCtrl.login = login;
+    vm.login = login;
   });

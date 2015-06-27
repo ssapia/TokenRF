@@ -1,9 +1,9 @@
 /**
  * Created by enrique1 on 6/14/15.
  */
-angular.module('app.common.models.errors',
+angular.module('app.service.errors',
   []).
-  service('ErrorsModel', function () {
+  service('ErrorsService', function () {
     var model = this;
     model.error = '';
 

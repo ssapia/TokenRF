@@ -1,0 +1,23 @@
+<ion-view view-title="Login">
+  <ion-content class="padding">
+    <br>
+    <br>
+    <img src="assets/images/rf.gif">
+    <br>
+    <form ng-submit="vm.login()" novalidate>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">usuário</span>
+          <input type="text" ng-model="vm.user.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">senha</span>
+          <input type="password" ng-model="vm.user.password">
+        </label>
+      </div>
+      <button type="submit" class="button button-block button-positive" >
+        entrar
+      </button>
+    </form>
+  </ion-content>
+</ion-view>

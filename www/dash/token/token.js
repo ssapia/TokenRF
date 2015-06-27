@@ -2,33 +2,24 @@
  * Created by enrique on 6/4/15.
  */
 angular
-  .module('app.token', [])
+  .module('app.dash.token', [])
   .config(function($stateProvider) {
     $stateProvider
       .state('token', {
         url: '/token',
-        templateUrl: 'token/token.tmpl.html',
+        templateUrl: 'dash/token/token.tmpl.html',
         controller: 'TokenController as vm'
       });
   })
-  .controller('TokenController', function($interval, UsersModel, ErrorsModel, $location, AuthTokenFactory) {
-
+  .controller('TokenController', function($interval, UsersService) {
     var vm = this;
 
-    vm.logout = function() {
-      AuthTokenFactory.setToken();
-    };
-
-    UsersModel.getUser().then(function() {
+    UsersService.checkAuthorization()
+      .then(function() {
         $interval(function() {
           vm.timer = getTimer();
           vm.token = getOtp();
         },1000);
-      },
-
-      function() {
-        ErrorsModel.setError('User not authenticared.');
-        $location.path('/login');
       });
 
     function getTimer() {

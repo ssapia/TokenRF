@@ -2,28 +2,33 @@
  * Created by enrique on 6/14/15.
  */
 angular
-  .module('app.common.models.users', [])
-  .service('UsersModel', function($http, $q, AuthTokenFactory) {
+  .module('app.service.users', [])
+  .service('UsersService', function($http, $q, AuthTokenFactory, $location) {
     var model = this,
       API_URL = 'http://localhost:4000';
 
     var handleSuccess = function(result) {
+      if (result.data.token) {
+        AuthTokenFactory.setToken(result.data.token);
+      }
       return result;
     };
 
     var handleError = function(result) {
-      alert('Error: '+result.data);
+      AuthTokenFactory.setToken();
+      $location.path('/login');
+      return null;
     };
 
     model.getRandomUser = function() {
       return $http.get(API_URL+'/random-user').then(handleSuccess, handleError);
     };
 
-    model.getUser = function() {
+    model.checkAuthorization = function() {
       if (AuthTokenFactory.getToken()) {
         return $http.get(API_URL + '/me').then(handleSuccess, handleError);
       } else {
-        return $q.reject('User not authenticated');
+        return $q.reject('User not authenticated').then(handleSuccess, handleError);
       }
     };
 
@@ -31,7 +36,7 @@ angular
       return $http.post(API_URL + '/login', {
         username: user.username,
         password: user.password
-      }).then(handleSuccess);
+      }).then(handleSuccess, handleError);
     };
 
   });
