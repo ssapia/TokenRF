@@ -5,7 +5,7 @@ angular
   .module('app.common.models.users', [])
   .service('UsersModel', function($http, $q, AuthTokenFactory) {
     var model = this,
-      API_URL = 'http://192.168.0.102:4000';
+      API_URL = 'http://localhost:4000';
 
     var handleSuccess = function(result) {
       return result;
