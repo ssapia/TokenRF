@@ -20,22 +20,20 @@ angular
           if (!user.tokensecret) {
             return;
           }
-          vm.timer = getTimer();
           vm.token = getOtp(user.tokensecret);
-        }, 1000);
+          progressBar();
+        },1000);
       });
 
-    function getTimer() {
+    function progressBar() {
       var epoch = Math.round(new Date().getTime() / 1000.0);
       var countDown = 30 - (epoch % 30);
-      if (epoch % 30 == 0) getOtp();
-
-      var percent = (100*countDown)/30;
-      //$('.progress-bar').css('width', percent+'%').attr('aria-valuenow', countDown);
-      return countDown;
+      $('#progressbar').val((100*countDown)/30);
     }
 
     function getOtp(secret) {
+
+      //alert(secret);	
 
       /* A chave será retornada no response do login */
       //var secret	= "JBSWY3DPEHPK3PXP";

@@ -1,13 +1,11 @@
 <ion-view view-title="token">
   <ion-content class="padding">
 
-    <div id="token">
-      <center>
-        <h3>
-          <div align="center">{{vm.token}}</div>
-          <div align="center">{{vm.timer}}</div>
-        </h3>
-      </center>
+    <div class="wrapper html5-progress-bar">
+      <h3><div align="center">{{vm.token}}</div></h3>
+      <div class="progress-bar-wrapper">
+        <progress id="progressbar" value="0" max="100"></progress>
+      </div>
     </div>
 
   </ion-content>
