@@ -3,7 +3,7 @@
  */
 angular
   .module('app.service.users', [])
-  .service('UsersService', function($http, $q, AuthTokenFactory, $location) {
+  .service('UsersService', function($http, $q, AuthTokenFactory, $location, $window) {
     var model = this,
       API_URL = 'http://localhost:4000';
 
@@ -30,7 +30,19 @@ angular
     };
 
     model.login = function(user) {
-      return $http.post(API_URL + '/login', user).then(handleSuccess, handleError);
+      	user.regId = model.getRegId(); 
+	return $http.post(API_URL + '/login', user).then(handleSuccess, handleError);
+    };
+
+    var store = $window.localStorage;
+    var key = 'REG_ID';
+
+    model.setRegId = function(regId) {
+      store.setItem('key', regId);
+    };
+
+    model.getRegId = function() {
+      return store.getItem('key');
     };
 
   });

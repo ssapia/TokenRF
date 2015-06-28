@@ -7,14 +7,19 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('app', [
   'ionic',
+  'ngCordova',
   'app.service.errors',
   'app.service.users',
   'app.dash.token',
   'app.dash',
   'app.login',
-  'ngCordova'])
-  .run(function($ionicPlatform) {
+  'app.service.push',
+  'app.push' ])
+  .run(function($ionicPlatform, PushService) {
     $ionicPlatform.ready(function() {
+	
+      PushService.register();
+
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
       if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
