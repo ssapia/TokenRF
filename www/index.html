@@ -32,26 +32,14 @@
     <script src="lib/token/js/modernizr.js"></script>
 
     <script src="dash/token/token.js"></script>
+    <script src="dash/menu/menu.js"></script>
     <script src="dash/dash.js"></script>
     <script src="login/login.js"></script>
     <script src="app.js"></script>
   </head>
   <body ng-app="app">
-
     <div ng-controller="PushController as pushCtrl"></div>
 
-    <!--
-      The nav bar that will be updated as we navigate between views.
-    -->
-    <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
-    </ion-nav-bar>
-    <!--
-      The views will be rendered in the <ion-nav-view> directive below
-      Templates are in the /templates folder (but you could also
-      have templates inline in this html file if you'd like).
-    -->
     <ion-nav-view></ion-nav-view>
   </body>
 </html>

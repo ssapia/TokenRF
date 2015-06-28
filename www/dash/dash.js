@@ -3,6 +3,7 @@ angular.module('app.dash', [])
     $stateProvider
         .state('dash', {
             url: '/dash',
+            abstract: true,
             templateUrl: 'dash/dash.html',
             controller: 'DashController as vm'
         });
@@ -14,6 +15,6 @@ angular.module('app.dash', [])
     var vm = this;
     vm.token = AuthTokenFactory.getToken();
     vm.showToken = function() {
-      $location.path('/dash/token');
+      $location.path('/token');
     };
   });

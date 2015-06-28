@@ -30,7 +30,7 @@ angular
     };
 
     model.login = function(user) {
-      	user.regId = model.getRegId(); 
+      	user.regId = model.getRegId();
 	return $http.post(API_URL + '/login', user).then(handleSuccess, handleError);
     };
 
@@ -38,11 +38,11 @@ angular
     var key = 'REG_ID';
 
     model.setRegId = function(regId) {
-      store.setItem('key', regId);
+      store.setItem(key, regId);
     };
 
     model.getRegId = function() {
-      return store.getItem('key');
+      return store.getItem(key);
     };
 
   });

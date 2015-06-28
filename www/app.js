@@ -11,13 +11,14 @@ angular.module('app', [
   'app.service.errors',
   'app.service.users',
   'app.dash.token',
+  'app.dash.menu',
   'app.dash',
   'app.login',
   'app.service.push',
   'app.push' ])
   .run(function($ionicPlatform, PushService) {
     $ionicPlatform.ready(function() {
-	
+
       PushService.register();
 
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard

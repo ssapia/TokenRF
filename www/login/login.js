@@ -23,7 +23,7 @@ angular
       UsersService.login(vm.user)
         .then(function(result) {
           if (result) {
-            $location.path('/dash');
+            $location.path('/dash/menu');
           }
         });
     }

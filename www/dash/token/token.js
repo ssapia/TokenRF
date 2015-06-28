@@ -5,10 +5,14 @@ angular
   .module('app.dash.token', [])
   .config(function($stateProvider) {
     $stateProvider
-      .state('dash-token', {
-        url: '/dash/token',
-        templateUrl: 'dash/token/token.tmpl.html',
-        controller: 'TokenController as vm'
+      .state('dash.token', {
+        url: '/token',
+        views: {
+          'dashContent': {
+            templateUrl: 'dash/token/token.tmpl.html',
+            controller: 'TokenController as vm'
+          }
+        }
       });
   })
   .controller('TokenController', function($interval, UsersService) {
@@ -33,7 +37,7 @@ angular
 
     function getOtp(secret) {
 
-      //alert(secret);	
+      //alert(secret);
 
       /* A chave será retornada no response do login */
       //var secret	= "JBSWY3DPEHPK3PXP";
