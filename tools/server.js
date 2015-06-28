@@ -54,6 +54,13 @@ function authenticate(req, res, next) {
   if (!body.device) {
     res.status(401).end('Invalid device');
   }
+
+  console.log('RegID::::::::::');
+  console.log(body.regId);
+  if (!body.regId) {
+    res.status(401).end('Invalid regId');
+  }
+
   next();
 }
 
