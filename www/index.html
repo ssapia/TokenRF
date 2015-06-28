@@ -7,6 +7,7 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="lib/token/css/style.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -16,13 +17,19 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
-    <script src="lib/token/sha.js"></script>
     <script src="lib/ngCordova/ng-cordova.js"></script>
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
     <script src="common/models/ErrorsModel.js"></script>
     <script src="common/models/UsersModel.js"></script>
+    <script src="common/models/PushModel.js"></script>
+    <script src="common/push/push.js"></script>
+
+    <!--  token -->
+    <script src="lib/token/js/sha.js"></script>
+    <script src="lib/token/js/jquery.min.js"></script>
+    <script src="lib/token/js/modernizr.js"></script>
 
     <script src="dash/token/token.js"></script>
     <script src="dash/dash.js"></script>
@@ -30,6 +37,9 @@
     <script src="app.js"></script>
   </head>
   <body ng-app="app">
+
+    <div ng-controller="PushController as pushCtrl"></div>
+
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
