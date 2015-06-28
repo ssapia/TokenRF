@@ -15,11 +15,14 @@ angular
     var vm = this;
 
     UsersService.checkAuthorization()
-      .then(function() {
+      .then(function(user) {
         $interval(function() {
+          if (!user.tokensecret) {
+            return;
+          }
           vm.timer = getTimer();
-          vm.token = getOtp();
-        },1000);
+          vm.token = getOtp(user.tokensecret);
+        }, 1000);
       });
 
     function getTimer() {
@@ -32,10 +35,10 @@ angular
       return countDown;
     }
 
-    function getOtp() {
+    function getOtp(secret) {
 
       /* A chave será retornada no response do login */
-      var secret	= "JBSWY3DPEHPK3PXP";
+      //var secret	= "JBSWY3DPEHPK3PXP";
       /***********************************************/
 
       var key = base32tohex(secret);

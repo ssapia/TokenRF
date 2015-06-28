@@ -11,17 +11,14 @@ angular
       if (result.data.token) {
         AuthTokenFactory.setToken(result.data.token);
       }
-      return result;
+      return result.data.user;
     };
 
     var handleError = function(result) {
+      console.log(result.data);
       AuthTokenFactory.setToken();
       $location.path('/login');
       return null;
-    };
-
-    model.getRandomUser = function() {
-      return $http.get(API_URL+'/random-user').then(handleSuccess, handleError);
     };
 
     model.checkAuthorization = function() {
@@ -33,10 +30,7 @@ angular
     };
 
     model.login = function(user) {
-      return $http.post(API_URL + '/login', {
-        username: user.username,
-        password: user.password
-      }).then(handleSuccess, handleError);
+      return $http.post(API_URL + '/login', user).then(handleSuccess, handleError);
     };
 
   });

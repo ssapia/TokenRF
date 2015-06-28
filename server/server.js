@@ -2,7 +2,6 @@
  * Created by enrique on 6/14/15.
  */
 var express = require('express');
-var faker = require('faker');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var jwt = require('jsonwebtoken');
@@ -17,28 +16,29 @@ app.use(expressJwt({secret: jwtSecret}).unless({path:['/login']}));
 
 var userDB = {
   username: 'admin',
-  password: 'admin'
+  password: 'admin',
+  tokensecret: 'JBSWY3DPEHPK3PXP'
 };
 
-app.get('/random-user', function(req, res) {
-  var user = faker.helpers.userCard();
-  user.avatar = faker.image.avatar();
-  res.json(user);
-});
+var userDBRes = {
+  username: 'admin',
+  tokensecret: 'JBSWY3DPEHPK3PXP'
+};
 
 app.post('/login', authenticate, function (req, res) {
-  var body = req.body;
   var token = jwt.sign({
     username: userDB.username
   }, jwtSecret);
   res.json({
     token: token,
-    user: userDB
+    user: userDBRes
   });
 });
 
-app.get('/me', function (req, res) {
-  res.send(req.user);
+app.get('/me', function(req, res) {
+  res.json({
+    user: userDBRes
+  });
 });
 
 function authenticate(req, res, next) {
@@ -48,6 +48,11 @@ function authenticate(req, res, next) {
   }
   if (body.username !== userDB.username || body.password !== userDB.password) {
     res.status(401).end('Invalid username or password');
+  }
+  console.log('Device::::::::::');
+  console.log(body.device);
+  if (!body.device) {
+    res.status(401).end('Invalid device');
   }
   next();
 }
