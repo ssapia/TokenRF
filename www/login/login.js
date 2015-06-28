@@ -11,9 +11,10 @@ angular
         controller: 'LoginController as vm'
       })
   })
-  .controller('LoginController', function($location, AuthTokenFactory, UsersService, $cordovaDevice) {
+  .controller('LoginController', function($location, AuthTokenFactory, UsersService, ErrorsService, $cordovaDevice) {
     var vm = this;
     vm.user = {};
+    vm.error = ErrorsService.getError;
 
     document.addEventListener("deviceready", function () {
       vm.user.device = $cordovaDevice.getDevice();

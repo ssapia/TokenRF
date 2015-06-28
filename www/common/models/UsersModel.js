@@ -3,11 +3,12 @@
  */
 angular
   .module('app.service.users', [])
-  .service('UsersService', function($http, $q, AuthTokenFactory, $location, $window) {
+  .service('UsersService', function($http, $q, AuthTokenFactory, ErrorsService, $location, $window) {
     var model = this,
       API_URL = 'http://localhost:4000';
 
     var handleSuccess = function(result) {
+      ErrorsService.clearError();
       if (result.data.token) {
         AuthTokenFactory.setToken(result.data.token);
       }
@@ -16,6 +17,7 @@ angular
 
     var handleError = function(result) {
       console.log(result.data);
+      ErrorsService.setError(result.data);
       AuthTokenFactory.setToken();
       $location.path('/login');
       return null;

@@ -17,5 +17,10 @@
         entrar
       </button>
     </form>
+    <div ng-show="vm.error()" class="card">
+      <div class="item item-text-wrap">
+        {{vm.error()}}
+      </div>
+    </div>
   </ion-content>
 </ion-view>
