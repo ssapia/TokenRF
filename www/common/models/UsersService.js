@@ -5,7 +5,7 @@ angular
   .module('app.service.users', [])
   .service('UsersService', function($http, $q, AuthTokenFactory, ErrorsService, $location, $window) {
     var model = this,
-      API_URL = 'http://localhost:4000';
+      API_URL = 'http://10.0.1.5:4000';
 
     var handleSuccess = function(result) {
       ErrorsService.clearError();
