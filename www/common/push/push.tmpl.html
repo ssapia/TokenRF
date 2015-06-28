@@ -1,0 +1,20 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">
+      {{pushCtrl.pushModel.title}}
+    </h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeModal()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+
+    <div data-ng-bind-html="pushCtrl.pushModel.message"></div>
+    <br><br>
+
+    <div align="right">
+      <button class="button button-positive" ng-click="closeModal()">negar</button>
+      <button class="button button-positive" ng-click="closeModal()">autorizar</button>
+    </div></div>
+  </ion-content>
+</ion-modal-view>
