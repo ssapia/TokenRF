@@ -1,6 +1,5 @@
 
-body {
-  background-color: #eee;
+#login-view {
   padding-top: 48px
 }
 
@@ -19,4 +18,3 @@ body {
   display: block;
   margin:  auto
 }
-

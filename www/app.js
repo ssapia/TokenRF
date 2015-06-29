@@ -35,7 +35,7 @@ angular.module('app', [
   .config(function($urlRouterProvider, $httpProvider) {
     // if none of the above states are matched, use this as the fallback
     $httpProvider.interceptors.push('AuthInterceptor');
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/dash/menu');
   })
   .factory('AuthTokenFactory', function AuthTokenFactory($window) {
     'use strict';

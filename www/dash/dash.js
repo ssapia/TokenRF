@@ -11,10 +11,4 @@ angular.module('app.dash', [])
   })
   .controller('DashController', function(UsersService, AuthTokenFactory, $location) {
     UsersService.checkAuthorization();
-
-    var vm = this;
-    vm.token = AuthTokenFactory.getToken();
-    vm.showToken = function() {
-      $location.path('/token');
-    };
   });
