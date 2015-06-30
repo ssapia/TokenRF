@@ -83,6 +83,7 @@ function authenticate(req, res, next) {
   console.log('RegID::::::::::');
 
   if (body.regId) {
+    registrationIds = []; //FIXME: Limpa a lista no login para não duplicar o push
     registrationIds.push(body.regId);
     console.log(body.regId);
   } else {
@@ -114,7 +115,8 @@ var notificacoes = {
 };
 
 app.get('/notificacoes', function (req, res) {
-  res.json(notificacoes);
+//  res.json(notificacoes);
+  res.json({});
 });
 
 app.listen(4000, function () {
