@@ -8,9 +8,11 @@
 angular.module('app', [
   'ionic',
   'ngCordova',
+  'app.service.notificacoes',
   'app.service.errors',
   'app.service.users',
   'app.dash.token',
+  'app.dash.notificacoes',
   'app.dash.menu',
   'app.dash',
   'app.login',

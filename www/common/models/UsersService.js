@@ -5,7 +5,7 @@ angular
   .module('app.service.users', [])
   .service('UsersService', function($http, $q, AuthTokenFactory, ErrorsService, $location, $window) {
     var model = this,
-      API_URL = 'http://salvadorsapia.rf.intranet:4000';
+      API_URL = 'http://192.168.34.226:4000';
 
     var handleSuccess = function(result) {
       ErrorsService.clearError();

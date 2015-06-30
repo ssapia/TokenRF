@@ -29,7 +29,7 @@ angular
 
     }
   })
-  .controller('PushController', function ($rootScope, $scope, UsersService, PushModel, $ionicModal) {
+  .controller('PushController', function ($rootScope, $scope, UsersService, PushModel, $ionicModal, NotificacoesService) {
 
     var vm = this;
 
@@ -74,11 +74,20 @@ angular
         vm.pushModel = PushModel;
         vm.pushModel.setMessage(notification.payload.message);
         vm.pushModel.setTitle(notification.payload.title);
+
+        console.log("PushNotificacao: " + notification.payload.message);
+        var notificacao = {
+          titulo: notification.payload.title,
+          corpo: notification.payload.message
+        };
+
+        NotificacoesService.addNotificacao(notificacao);
+
         $scope.modal.show();
 
-        $rootScope.$apply(function () {
-          $rootScope.notifications.push(JSON.stringify(notification.message));
-        })
+        //$rootScope.$apply(function () {
+        //  $rootScope.notifications.push(JSON.stringify(notification.message));
+        //})
 
       } else if (notification.event == "error") {
         alert(notification.msg + " Push notification error event");
