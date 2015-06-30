@@ -92,6 +92,31 @@ function authenticate(req, res, next) {
   next();
 }
 
+var notificacoes = {
+  notificacoes: [
+    {
+      titulo: 'Emissao aerea',
+      corpo: 'Voce permite a emissão do loc ABCDE'
+    },
+    {
+      titulo: 'Emissao aerea',
+      corpo: 'Voce permite a emissão do loc ZSFHS'
+    },
+    {
+      titulo: 'Envio de OP',
+      corpo: 'Voce permite o envio da OP para o loc HGKDL'
+    },
+    {
+      titulo: 'Aprovacao de credito',
+      corpo: 'Voce aprova o credito de R$xxx,xx para a agencia emitir o loc CDSAS'
+    }
+  ]
+};
+
+app.get('/notificacoes', function (req, res) {
+  res.json(notificacoes);
+});
+
 app.listen(4000, function () {
   console.log('App listening on localhost:4000');
 });
