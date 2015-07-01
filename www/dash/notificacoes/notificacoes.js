@@ -17,8 +17,8 @@ angular.module('app.dash.notificacoes', [])
   })
   .controller('NotificacoesController', function(NotificacoesService, ErrorsService) {
       var vm = this;
+      vm.selectedtype = 'Todos';
       vm.notificacoes = NotificacoesService.getNotificacoes();
-      console.log('controller notf');
       //NotificacoesService.getNotificacoes()
       //    .then(function (result) {
       //      vm.notificacoes = result.data.notificacoes;

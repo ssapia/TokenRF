@@ -8,6 +8,7 @@
 angular.module('app', [
   'ionic',
   'ngCordova',
+  'app.filters',
   'app.service.notificacoes',
   'app.service.errors',
   'app.service.users',

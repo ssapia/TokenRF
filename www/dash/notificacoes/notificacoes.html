@@ -2,22 +2,21 @@
   <ion-content class="padding">
 
     <div class="list">
-
       <label class="item item-input item-select">
         <div class="input-label">
           Tipo
         </div>
         <select ng-model="vm.selectedtype">
-          <option>OP</option>
+          <option selected>Todos</option>
           <option>Emissao</option>
+          <option>OP</option>
           <option>Credito</option>
         </select>
       </label>
-
     </div>
 
     <div class="list">
-      <div ng-repeat="notificacao in vm.notificacoes.notificacoes | filter: {tipo: vm.selectedtype}" class="item item-icon-right">
+      <div ng-repeat="notificacao in vm.notificacoes.notificacoes | notificacoesCustomFilter: vm.selectedtype" class="item item-icon-right">
         {{notificacao.titulo}}
           <i class="icon ion-chevron-right"></i>
       </div>
