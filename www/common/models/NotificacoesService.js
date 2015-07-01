@@ -8,14 +8,32 @@ angular
         service.notificacoes = {
             notificacoes: [
                 {
+                    tipo: 'Emissao',
                     titulo: 'Emissao aerea',
                     corpo: 'Voce permite a emissão do loc ABCDE'
                 },
                 {
+                    tipo: 'Emissao',
+                    titulo: 'Emissao aerea',
+                    corpo: 'Voce permite a emissão do loc ABCDE'
+                },
+                {
+                    tipo: 'Emissao',
+                    titulo: 'Emissao aerea',
+                    corpo: 'Voce permite a emissão do loc ABCDE'
+                },
+                {
+                    tipo: 'OP',
                     titulo: 'Envio de OP',
                     corpo: 'Voce permite o envio da OP para o loc HGKDL'
                 },
                 {
+                    tipo: 'OP',
+                    titulo: 'Envio de OP',
+                    corpo: 'Voce permite o envio da OP para o loc HGKDL'
+                },
+                {
+                    tipo: 'Credito',
                     titulo: 'Aprovacao de credito',
                     corpo: 'Voce aprova o credito de R$xxx,xx para a agencia emitir o loc CDSAS'
                 }
