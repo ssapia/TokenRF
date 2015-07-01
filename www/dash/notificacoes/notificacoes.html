@@ -17,7 +17,7 @@
 
     <div class="list">
       <div ng-repeat="notificacao in vm.notificacoes.notificacoes | notificacoesCustomFilter: vm.selectedtype" class="item item-icon-right">
-        {{notificacao.titulo}}
+        {{notificacao.titulo}} - {{notificacao.valor | currency : 'R$ ' : 2}}
           <i class="icon ion-chevron-right"></i>
       </div>
     </div>

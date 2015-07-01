@@ -10,32 +10,38 @@ angular
                 {
                     tipo: 'Emissao',
                     titulo: 'Emissao aerea',
-                    corpo: 'Voce permite a emissão do loc ABCDE'
+                    corpo: 'Voce permite a emissão do loc ABCDE',
+                    valor: 1500
                 },
                 {
                     tipo: 'Emissao',
                     titulo: 'Emissao aerea',
-                    corpo: 'Voce permite a emissão do loc ABCDE'
+                    corpo: 'Voce permite a emissão do loc ABCDE',
+                    valor: 567.93
                 },
                 {
                     tipo: 'Emissao',
                     titulo: 'Emissao aerea',
-                    corpo: 'Voce permite a emissão do loc ABCDE'
+                    corpo: 'Voce permite a emissão do loc ABCDE',
+                    valor: 472.83
                 },
                 {
                     tipo: 'OP',
                     titulo: 'Envio de OP',
-                    corpo: 'Voce permite o envio da OP para o loc HGKDL'
+                    corpo: 'Voce permite o envio da OP para o loc HGKDL',
+                    valor: 628.23
                 },
                 {
                     tipo: 'OP',
                     titulo: 'Envio de OP',
-                    corpo: 'Voce permite o envio da OP para o loc HGKDL'
+                    corpo: 'Voce permite o envio da OP para o loc HGKDL',
+                    valor: 283.98
                 },
                 {
                     tipo: 'Credito',
                     titulo: 'Aprovacao de credito',
-                    corpo: 'Voce aprova o credito de R$xxx,xx para a agencia emitir o loc CDSAS'
+                    corpo: 'Voce aprova o credito de R$xxx,xx para a agencia emitir o loc CDSAS',
+                    valor: 529.05
                 }
             ]
         };
